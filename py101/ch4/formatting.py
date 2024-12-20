@@ -57,4 +57,12 @@ greetings = "\nHello {name1}. You must be over the age of {age1} to pass"
 print(greetings.format(name1=name1, age1=age1))
 
 
-# f-strings
+# f-strings are evaluated at runtime. This means I can put a Python expression inside the f-string
+birth_year = 1980
+f"{birth_year+2}"
+
+full_name = "Mike Johns"
+f"{full_name.lower()}"
+
+sample_dict = {"name": "Tom", "age": 45}
+f"Hello {sample_dict["name"]}. You are {sample_dict['age']} year old."
